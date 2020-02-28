@@ -33,7 +33,6 @@ public class baseBallGame1 {
 	}
 
 	static int[] initBallArray() {
-		// 수정!@!@!@!@!@
 		Random r = new Random();
 
 		int[] ballArr = { 10, 10, 10 }; // 정답을 담을 배열
