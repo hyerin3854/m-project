@@ -1,0 +1,15 @@
+package chapter08.int1;
+
+public class MyClass implements MyInterface {
+	@Override
+	public void yourMethod() {
+		System.out.println();
+	}
+
+	@Override
+	public void myMethod() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

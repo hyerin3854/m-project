@@ -1,0 +1,105 @@
+package baseBallGame;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class NumberBaseBallGame throw Exceptions  {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+				while(true)
+				{System.out.println("숫자야구 시작하시겠습니까? 1.start ||2.exit");
+				int game = scan.nextInt();
+				if (game ==2) {
+					System.out.println("게임을 종료하겠습니다.");
+					break;
+					
+				}else
+					System.out.println("게임을 시작하겠습니다.");
+				int ballArray[] = new int[3];
+				int userArray[] = new int[3];
+				
+				ballArray =initBallArray();
+				
+				while(true) {
+					userArray = inputUserNumber();
+					if(game(ballArray, userArray))
+						break;
+					
+				}
+				
+				
+				
+				
+				}
+	}
+
+	 private static boolean game(int[] ballArray, int[] userArray) {
+		int strike = 0;
+		int ball = 0;
+		for (int i=0; i<ballArray.length; i++) {
+			for(int j=0; j<userArray.length; j++) {
+				if(ballArray[i]== userArray[j]) {
+					if(i==j) {
+						strike++;
+						
+					}else
+						ball++;
+					
+				}
+			}
+		}
+		 System.out.println(strike+"스트라이트"+ball+"볼");
+		 if(strike ==3) {
+			 return true;
+		 }else
+		 return false;
+	}
+
+	private static int[] inputUserNumber() {
+
+		 Scanner s = new Scanner(System.in);
+		 System.out.println("숫자 3개를 입력하세요(중복불가)");
+		 int userNum = s.nextInt();
+		 int num1, num2, num3;
+		 
+		 num1 =userNum /100; //100의 자리수
+		 num2 = (userNum /10)% 10; //10의 자리수
+		 num3 = userNum % 10; //1의자리수
+		 int[] userNumArray = {num1, num2, num3};
+		 
+		 return userNumArray;
+		 
+		 
+		 
+		 
+		 
+	}
+
+	static int[] initBallArray() {
+		 
+		 Random r= new Random();
+		 int[] ballArr= {10,10,10};//정답을 담을 배열 
+		 
+		 for (int i= 0; i<ballArr.length; i++) {
+			 int ball= r.nextInt(10);
+			 ballArr[i] =ball;
+			 
+			 for(int j=0; j<i; j++) {
+				 if(ballArr[j] != ballArr[i])//숫자 중복시 배열에 다시 넣도록함
+					 continue;
+			 } else {
+			i--;
+			break;
+			
+						 
+			
+			 }
+		 }
+		 
+	 }
+		 
+		 
+		 
+		return ballArr;
+	}
+

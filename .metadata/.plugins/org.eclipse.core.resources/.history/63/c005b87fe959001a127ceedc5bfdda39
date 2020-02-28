@@ -1,0 +1,12 @@
+package fortune;
+
+import java.util.Random;
+
+public class RandomTest {
+	public static void main(String[] args) {
+		Random r = new Random(); //Random 클래스의 객체를 생성
+		
+		System.out.println("0~99까지의 난수 :" +Math.abs(r.nextInt()%100));
+		
+	}
+}

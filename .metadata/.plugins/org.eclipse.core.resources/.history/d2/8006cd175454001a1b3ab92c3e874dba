@@ -1,0 +1,5 @@
+package sec10.exam04_singleton;
+
+public class Singleton {
+
+}

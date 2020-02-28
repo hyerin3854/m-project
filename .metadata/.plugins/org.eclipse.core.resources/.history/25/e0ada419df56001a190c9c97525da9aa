@@ -1,0 +1,10 @@
+package verify.exam18;
+
+public class ShopService {
+	private static ShopService = new ShopService();
+	
+	private ShopService() {
+	}
+		
+	}
+}

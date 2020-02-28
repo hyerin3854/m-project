@@ -1,0 +1,6 @@
+package chapter08.int1;
+
+public class MyClass implements MyInterface {
+
+
+}

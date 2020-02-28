@@ -1,0 +1,9 @@
+package verify.exam16;
+
+public class Printer {
+	void prinln(int value) {
+		System.out.println(value);
+	}
+	
+	
+}

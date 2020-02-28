@@ -1,0 +1,23 @@
+package sec14.exam01_getter_setter;
+
+public class CarExample {
+
+	public static void main(String[] args) {
+		Car myCar= new Car();
+		
+		myCar.setSpeed(-1400); 
+		myCar.setStop(false);
+		System.out.println("현재 속도:"+myCar.getSpeed());
+		System.out.println("현재 속도:"+myCar.isStop());
+		
+		if(!myCar.isStop()) {
+			myCar.setStop(true);
+		}
+		System.out.println("현재 속도:"+myCar.getSpeed() );
+	}
+	int a;
+
+	public CarExample() {
+		// TODO Auto-generated constructor stub
+	}
+}

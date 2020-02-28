@@ -1,0 +1,10 @@
+package chapter08.int1;
+
+public interface MyInterface {
+
+	void myMethod();
+
+	void yourMethod();
+
+	
+}

@@ -1,0 +1,11 @@
+package baseBallGame;
+
+public class NumberBaseBallGame {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+				while(true)
+				{System.out.println("숫자야구 시작하시겠습니까? 1.start ||2.exit");
+				int g
+				}
+	}
+}
